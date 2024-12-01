@@ -525,6 +525,10 @@ header .background .container .right video {
     #pantai .container .gallery .fa-circle-chevron-right {
         right: 10%;
     }
+
+    #balekambang h2 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
