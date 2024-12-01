@@ -1,0 +1,571 @@
+:root {
+    --white: #ffffff;
+    --black: #121212;
+    --lightblue: #add8e6;
+    --green: #00ff00;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px dotted var(--black); */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* navbar */
+.navbar {
+    margin: 20px auto;
+    top: 0;
+    width: 80%;
+    background-color: var(--white);
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+
+.navbar .fa-umbrella-beach {
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-item {
+    color: var(--black);
+    font-weight: bold;
+    margin: 0 5px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-item:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.navbar .btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    background: transparent;
+    border: 2px solid var(--black);
+    color: var(--black);
+    box-shadow: 5px 5px 10px var(--black);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+    transform: scale(1.1);
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    box-shadow: none;
+}
+
+/* header */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: var(--lightblue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .background {
+    width: 99%;
+    height: 97%;
+    background: url('gambar/pantai5.jpg') no-repeat center center/cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .background .container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header .background .container .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+    width: 50%;
+    height: 50%;
+}
+
+header .background .container .left h1 {
+    color: var(--white);
+    font-family: "Alkatra", system-ui;
+    font-size: 3rem;
+    margin: 0;
+    cursor: default;
+}
+
+header .background .container .left h2 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0;
+    cursor: default;
+}
+
+header .background .container .left h3 {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin: 0;
+    cursor: default;
+}
+
+header .background .container .left p {
+    color: var(--white);
+    font-size: 1rem;
+    margin: 0;
+    cursor: default;
+}
+
+header .background .container .left .btn {
+    align-self: center;
+    width: 80%;
+    height: 40px;
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    color: var(--white);
+    box-shadow: 5px 5px 10px var(--black);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header .background .container .left .btn:hover {
+    transform: scale(1.05);
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: none;
+}
+
+header .background .container .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+header .background .container .right .search {
+    width: 80%;
+    height: 30px;
+    filter: drop-shadow(5px 5px 10px var(--black));
+    transition: all 0.3s ease;
+}
+
+header .background .container .right .search:focus-within {
+    filter: none;
+}
+
+header .background .container .right .search .fa-magnifying-glass {
+    position: relative;
+    top: 0;
+    left: 56%;
+    color: var(--black);
+    font-size: 1.6rem;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+header .background .container .right .search:focus-within .fa-magnifying-glass {
+    opacity: 0;
+}
+
+header .background .container .right .search input {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: -35px;
+}
+
+header .background .container .right .box {
+    width: 80%;
+    height: 270px;
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+header .background .container .right video {
+    width: 99%;
+    height: 99%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* halaman pantai */
+#pantai {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--lightblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pantai h2 {
+    font-size: 2rem;
+    position: relative;
+    top: 15%;
+    cursor: default;
+}
+
+#pantai .container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: auto;
+}
+
+#pantai .container .card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex: 0 0 auto;
+    margin: 0 10px;
+    flex-direction: column;
+    /* jika membuat efek hover untuk height, haram pakai justify-content */
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    margin-left: 20px;
+}
+
+#pantai .container .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    box-shadow: 5px 5px 10px var(--black);
+    /* posisi awal */
+}
+
+#pantai .container .card:hover img {
+    box-shadow: none;
+    transform: translate(-30px, -30px);
+    transform: scale(1.05);
+}
+
+#pantai .container .card .card-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--green);
+    border-radius: 10px;
+    z-index: 0;
+    transition: all 0.5s ease;
+}
+
+#pantai .container .card:hover .card-body {
+    transform: translate(50px, 50px);
+}
+
+#pantai .container .card .card-body h3 {
+    font-size: 1.3rem;
+    color: var(--black);
+    margin: 0;
+    cursor: default;
+    position: relative;
+    top: 58%;
+    transition: all 0.5s ease;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+#pantai .container .card:hover .card-body h3 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#pantai .container .card .card-body p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0;
+    writing-mode: vertical-lr;
+    cursor: default;
+    position: relative;
+    left: 48%;
+    transition: all 0.5s ease;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+#pantai .container .card:hover .card-body p {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#pantai .container .gallery {
+    width: 400px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#pantai .container .gallery .slider {
+    width: 400px;
+    height: 280px;
+    display: flex;
+    position: relative;
+}
+
+#pantai .container .gallery .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+#pantai .container .gallery .slider img.active {
+    opacity: 1;
+}
+
+#pantai .container .gallery .fa-circle-chevron-left,
+#pantai .container .gallery .fa-circle-chevron-right {
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+#pantai .container .gallery .fa-circle-chevron-left {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    z-index: 5;
+}
+
+#pantai .container .gallery .fa-circle-chevron-right {
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    z-index: 5;
+}
+
+#balekambang {
+    background-color: var(--lightblue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+#balekambang h2 {
+    margin: 0;
+    font-size: 2rem;
+    cursor: default;
+}
+
+#balekambang .container {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#balekambang .container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar {
+        width: 90%;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .btn {
+        position: relative;
+        left: 5%;
+        width: 110px;
+    }
+
+    header .background {
+        width: 95%;
+    }
+
+    header .background .container .left,
+    header .background .container .right {
+        width: 100%;
+    }
+
+    header .background .container .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .background .container .left h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    header .background .container .left h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    header .background .container .left h3 {
+        font-size: 1rem;
+    }
+
+    header .background .container .left p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    header .background .container .left h1 {
+        font-size: 2rem;
+    }
+
+    header .background .container .right .search,
+    header .background .container .right .box {
+        width: 90%;
+    }
+
+    #pantai h2 {
+        font-size: 1.5rem;
+        position: relative;
+        top: 7%;
+    }
+
+    #pantai .container .card {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 5%;
+    }
+
+    #pantai .container .card .card-body h3 {
+        font-size: 1rem;
+    }
+
+    #pantai .container .card .card-body p {
+        font-size: 0.8rem;
+    }
+
+    #pantai .container .gallery {
+        width: 280px;
+        height: 250px;
+    }
+
+    #pantai .container .gallery .fa-circle-chevron-left {
+        left: 10%;
+    }
+    
+    #pantai .container .gallery .fa-circle-chevron-right {
+        right: 10%;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .navbar {
+        margin-top: 50px;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .btn {
+        position: relative;
+        left: 5%;
+    }
+
+    header .background {
+        width: 95%;
+    }
+
+    #pantai {
+        height: 50vh;
+    }
+
+    #pantai .container .card {
+        width: 210px;
+        height: 210px;
+    }
+
+    #pantai .container .gallery {
+        width: 280px;
+        height: 250px;
+    }
+
+    #pantai .container .gallery .fa-circle-chevron-left {
+        left: 10%;
+    }
+    
+    #pantai .container .gallery .fa-circle-chevron-right {
+        right: 10%;
+    }
+}
