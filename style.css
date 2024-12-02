@@ -30,16 +30,19 @@ body {
     border-radius: 50px;
 }
 
+/* class navbar-brand */
 .navbar .fa-umbrella-beach {
     font-size: 1.5rem;
 }
 
+/* class navbar-nav */
 .navbar .navbar-nav {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
+/* class nav-item */
 .navbar .navbar-nav .nav-item {
     color: var(--black);
     font-weight: bold;
@@ -53,6 +56,7 @@ body {
     color: var(--white);
 }
 
+/* class btn */
 .navbar .btn {
     display: flex;
     justify-content: flex-end;
@@ -77,7 +81,8 @@ body {
     box-shadow: none;
 }
 
-/* header */
+
+/* halaman header */
 header {
     position: relative;
     top: 0;
@@ -91,6 +96,7 @@ header {
     align-items: center;
 }
 
+/* class background */
 header .background {
     width: 99%;
     height: 97%;
@@ -105,6 +111,7 @@ header .background {
     align-items: center;
 }
 
+/* class container */
 header .background .container {
     width: 90%;
     height: 90%;
@@ -114,6 +121,7 @@ header .background .container {
     align-items: center;
 }
 
+/* class left */
 header .background .container .left {
     display: flex;
     flex-direction: column;
@@ -123,6 +131,7 @@ header .background .container .left {
     height: 50%;
 }
 
+/* tag h1 */
 header .background .container .left h1 {
     color: var(--white);
     font-family: "Alkatra", system-ui;
@@ -131,6 +140,7 @@ header .background .container .left h1 {
     cursor: default;
 }
 
+/* tag h2 */
 header .background .container .left h2 {
     color: var(--white);
     font-size: 1.5rem;
@@ -138,6 +148,7 @@ header .background .container .left h2 {
     cursor: default;
 }
 
+/* tag h3 */
 header .background .container .left h3 {
     color: var(--white);
     font-size: 1.3rem;
@@ -145,6 +156,7 @@ header .background .container .left h3 {
     cursor: default;
 }
 
+/* tag p */
 header .background .container .left p {
     color: var(--white);
     font-size: 1rem;
@@ -152,6 +164,7 @@ header .background .container .left p {
     cursor: default;
 }
 
+/* class btn */
 header .background .container .left .btn {
     align-self: center;
     width: 80%;
@@ -171,6 +184,7 @@ header .background .container .left .btn:hover {
     box-shadow: none;
 }
 
+/* cals right */
 header .background .container .right {
     display: flex;
     flex-direction: column;
@@ -180,6 +194,7 @@ header .background .container .right {
     height: 50%;
 }
 
+/* class search */
 header .background .container .right .search {
     width: 80%;
     height: 30px;
@@ -191,6 +206,7 @@ header .background .container .right .search:focus-within {
     filter: none;
 }
 
+/* class fa-magnifying-glass */
 header .background .container .right .search .fa-magnifying-glass {
     position: relative;
     top: 0;
@@ -205,6 +221,7 @@ header .background .container .right .search:focus-within .fa-magnifying-glass {
     opacity: 0;
 }
 
+/* tag input */
 header .background .container .right .search input {
     width: 100%;
     height: 40px;
@@ -215,6 +232,7 @@ header .background .container .right .search input {
     top: -35px;
 }
 
+/* class box */
 header .background .container .right .box {
     width: 80%;
     height: 270px;
@@ -228,12 +246,14 @@ header .background .container .right .box {
     padding: 10px;
 }
 
+/* tag video */
 header .background .container .right video {
     width: 99%;
     height: 99%;
     object-fit: cover;
     border-radius: 10px;
 }
+
 
 /* halaman pantai */
 #pantai {
@@ -246,6 +266,7 @@ header .background .container .right video {
     align-items: center;
 }
 
+/* tag h2 */
 #pantai h2 {
     font-size: 2rem;
     position: relative;
@@ -253,6 +274,7 @@ header .background .container .right video {
     cursor: default;
 }
 
+/* class container */
 #pantai .container {
     width: 90%;
     height: 90%;
@@ -263,6 +285,7 @@ header .background .container .right video {
     overflow-x: auto;
 }
 
+/* class card */
 #pantai .container .card {
     width: 300px;
     height: 300px;
@@ -278,6 +301,7 @@ header .background .container .right video {
     margin-left: 20px;
 }
 
+/* tag img */
 #pantai .container .card img {
     width: 100%;
     height: 100%;
@@ -291,10 +315,10 @@ header .background .container .right video {
 
 #pantai .container .card:hover img {
     box-shadow: none;
-    transform: translate(-30px, -30px);
     transform: scale(1.05);
 }
 
+/* class card-body */
 #pantai .container .card .card-body {
     width: 100%;
     height: 100%;
@@ -314,6 +338,7 @@ header .background .container .right video {
     transform: translate(50px, 50px);
 }
 
+/* tag h3 */
 #pantai .container .card .card-body h3 {
     font-size: 1.3rem;
     color: var(--black);
@@ -331,6 +356,7 @@ header .background .container .right video {
     opacity: 1;
 }
 
+/* tag p */
 #pantai .container .card .card-body p {
     font-size: 1rem;
     font-weight: 600;
@@ -350,6 +376,7 @@ header .background .container .right video {
     opacity: 1;
 }
 
+/* class gallery */
 #pantai .container .gallery {
     width: 400px;
     height: 280px;
@@ -360,6 +387,7 @@ header .background .container .right video {
     /* overflow: hidden; */
 }
 
+/* class .slider */
 #pantai .container .gallery .slider {
     width: 400px;
     height: 280px;
@@ -367,6 +395,7 @@ header .background .container .right video {
     position: relative;
 }
 
+/* tag img */
 #pantai .container .gallery .slider img {
     width: 100%;
     height: 100%;
@@ -380,6 +409,7 @@ header .background .container .right video {
     opacity: 1;
 }
 
+/* tag 1 */
 #pantai .container .gallery .fa-circle-chevron-left,
 #pantai .container .gallery .fa-circle-chevron-right {
     font-size: 2rem;
@@ -401,6 +431,8 @@ header .background .container .right video {
     z-index: 5;
 }
 
+
+/* halaman balekambang */
 #balekambang {
     background-color: var(--lightblue);
     width: 100%;
@@ -412,12 +444,14 @@ header .background .container .right video {
     row-gap: 20px;
 }
 
+/* tag h2 */
 #balekambang h2 {
     margin: 0;
     font-size: 2rem;
     cursor: default;
 }
 
+/* class container */
 #balekambang .container {
     width: 90%;
     height: 60%;
@@ -426,6 +460,7 @@ header .background .container .right video {
     align-items: center;
 }
 
+/* tag iframe */
 #balekambang .container iframe {
     width: 100%;
     height: 100%;
@@ -563,17 +598,18 @@ footer .sosial i {
     }
 
     header .background .container .left h1 {
-        font-size: 2rem;
+        font-size: 1.6rem !important;
         text-align: center;
     }
 
     header .background .container .left h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
     }
 
     header .background .container .left h3 {
         font-size: 1rem;
+        margin-top: 10px;
     }
 
     header .background .container .left p {
